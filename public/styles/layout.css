@@ -18,7 +18,19 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family:'Roboto Condensed', sans-serif;
 }
+
+.container {
+  background-color: white;
+  margin: 0 auto;
+  min-height: 500px;
+  width: 450px;
+  position: relative;
+  top: 90px;
+
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
