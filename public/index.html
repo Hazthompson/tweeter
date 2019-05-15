@@ -5,10 +5,14 @@
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet" >
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i"
+      rel="stylesheet"
+    />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -20,32 +24,58 @@
 
     <!-- App JS -->
 
-    <script async type="text/javascript" src="/scripts/composer-character-counter.js"></script>
-     <script type="text/javascript" src="/scripts/app.js"></script>
+    <script
+      async
+      type="text/javascript"
+      src="/scripts/composer-character-counter.js"
+    ></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
     <!-- <script type="text/javascript" src="/scripts/composer-character-counter.js"></script> -->
   </head>
 
   <body>
-
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png">
+      <img class="logo" src="/images/bird.png" />
       <span class="header">Tweeter</span>
     </nav>
 
-
     <!-- Page-specific (main) content here -->
     <main class="container">
-
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets/" >
-          <textarea name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+        <form method="POST" action="/tweets/">
+          <textarea
+            name="text"
+            placeholder="What are you humming about?"
+          ></textarea>
+          <input type="submit" value="Tweet" />
           <span class="counter">140</span>
-
         </form>
       </section>
+
+      <section class="container-tweets">
+        <article class="tweet-article">
+
+          <header>
+            <img class="profile-picure" src="/images/example-photo.png" alt="profile picture">
+            <h3>Name</h3>
+            <span class="user-Handle"> @Smiley</span>
+          </header>
+
+          <p class=tweet-message>Little tweet here</p>
+
+          <footer>
+            <span>10 days ago</span>
+            <div class=tweeting-images>
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
+
 
     </main>
 
