@@ -1,16 +1,16 @@
 
 .new-tweet {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-top: 1em;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #c6c6c6;
-    border-width: 1px;
-    position: relative;
-    top: 4em;
-    padding: 10px;
-    background-color: #eee;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  position: relative;
+  top: 4em;
+  padding: 10px;
+  background-color: #eee;
 }
 
 .new-tweet textarea {
@@ -20,8 +20,12 @@
 }
 
 .new-tweet .counter {
-      float: right;
-      font-style: italic;
+  float: right;
+  font-style: italic;
+}
+
+.new-tweet .counter.negative {
+  color:red;
 }
 
 .new-tweet h2 {
