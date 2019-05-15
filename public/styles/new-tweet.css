@@ -84,10 +84,8 @@
 }
 
 .container-tweets header span {
-  display: block;
-  position: relative;
-  left: 200px;
-  top:5px;
+  padding-left: 180px;
+  padding-top:40px;
 }
 
 
