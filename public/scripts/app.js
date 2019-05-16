@@ -62,12 +62,18 @@ function renderTweets(tweets) {
 
   // loops through tweets
     // calls createTweetElement for each tweet takes return value and appends it to the tweets container
+
+    $('.container-tweets').html("");
     for(let tweet of tweets){
       let newTweet = createTweetElement(tweet);
       $('.container-tweets').prepend(newTweet)
     }
 };
 
+//currently replacing all tweets (deleting pg each time add new one and adding all back)
+//in future could do new function (when open pg render renderTweets, but then after this, the
+//"on.clicl" success function instead of calling renderTweets would call different function that just
+//adds latest tweet (using index[tweetcd.length])))
 
 //renderTweets(data);
 
@@ -90,9 +96,11 @@ input.on("click",function() {
       method: "POST",
       url: "/tweets",
       data: targetedForm.serialize(),
-      success: function() {
-        console.log("success")
+      success: function(response) {
+        loadTweets();
+        console.log("success!");
       },
+
     });
   }
 })
