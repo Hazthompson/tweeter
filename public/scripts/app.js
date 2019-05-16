@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
+$(newTweetSection).hide()
 //   $('.container-tweets').hover(
 //        function(){ $(this).addClass('hover') },
 //        function(){ $(this).removeClass('hover') }
 // )
 
-let input = $(".new-tweet input");
+
 
 function createTweetElement(tweetObject) {
   let $tweet = $("<article>").addClass("tweet-article");
@@ -78,6 +79,7 @@ function renderTweets(tweets) {
 //renderTweets(data);
 
 
+let input = $(".new-tweet input");
 
 input.on("click",function() {
   event.preventDefault();
@@ -122,5 +124,28 @@ function loadTweets() {
 }
 
 loadTweets();
+
+let composeButton = $("#nav-bar .compose-button");
+
+composeButton.on("click", function() {
+  let body =  $(this).parent().parent();
+  let newTweetSection = $(body.find(".new-tweet"));
+
+  // newTweetSection.toggle(
+  //   function(){newTweetSection.slideDown("slow")}
+  //   function(){newTweetSection.slideUp("slow")}
+  //   )
+
+if ( $(newTweetSection).is( ":hidden" ) ) {
+    $(newTweetSection).slideDown( "slow" );
+  } else {
+    $(newTweetSection).hide();
+  }
+
+
+
+
+
+})
 
 });

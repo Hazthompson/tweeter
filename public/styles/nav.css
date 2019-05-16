@@ -23,3 +23,19 @@
   font-size: 200%;
   line-height: 85px;
 }
+
+#nav-bar .compose-button {
+  color: #00a087;
+  background-color: white;
+  float:right;
+  margin-top: 10px;
+  font-size: 15px;
+  border-radius:5px;
+  height: 60px;
+  border: solid black 0.5px;
+  /*background-image:url('<i class="fas fa-edit"></i>');*/
+}
+
+#nav-bar .compose-button:hover {
+  color: black;
+}
