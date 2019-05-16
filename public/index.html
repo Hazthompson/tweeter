@@ -44,17 +44,23 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/">
           <textarea
+            required="required"
             class="text-area"
             name="text"
             placeholder="What are you humming about?"
           ></textarea>
+          <label class="no-text">No tweet composed!</label>
+          <label class="too-long">Exceeded 140 characters!</label>
           <input type="submit" value="Tweet" />
           <span class="counter">140</span>
         </form>
+
+
       </section>
 
       <section class="container-tweets">

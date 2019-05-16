@@ -2,7 +2,8 @@ $(document).ready(function() {
 
 
 let initialHide = $(".new-tweet").hide();
-console.log(initialHide);
+$(".no-text").hide();
+$(".too-long").hide();
 
 //   $('.container-tweets').hover(
 //        function(){ $(this).addClass('hover') },
@@ -90,11 +91,14 @@ input.on("click",function() {
   let targetedForm = $(this).parent();
   let targetedTextArea = $(targetedForm.find(".text-area"));
   let formMessage = targetedTextArea.val();
+  console.log(targetedForm.serialize())
 
   if (!formMessage) {
-    alert("Please enter a tweet!")
+    $(".no-text").slideDown( "slow" );
+    $(".text-area").on("click", function() {$(".no-text").hide()});
   } else if (formMessage.length > 140) {
-    alert("The maximum characters is 140 per tweet!")
+    $(".too-long").slideDown( "slow" );
+    $(".text-area").on("click", function() {$(".too-long").hide()});
   } else {
 
     $.ajax({
@@ -142,7 +146,7 @@ composeButton.on("click", function() {
 
 if ( $(newTweetSection).is( ":hidden" ) ) {
     $(newTweetSection).slideDown( "slow" );
-    $(".text-area").focus();
+    $(".text-area").focus()
   } else {
     $(newTweetSection).hide();
   }

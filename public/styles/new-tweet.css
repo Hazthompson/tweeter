@@ -11,6 +11,7 @@
   top: 4em;
   padding: 10px;
   background-color: #eee;
+  height:170px;
 }
 
 .new-tweet textarea {
@@ -25,7 +26,7 @@
 }
 
 .new-tweet .counter.negative {
-  color:red;
+  color: #d1364d;
 }
 
 .new-tweet h2 {
@@ -99,3 +100,16 @@
   padding: 10px;
 }
 
+.no-text {
+  color: #d1364d;
+  margin-left:75px;
+}
+
+.too-long {
+ color: #d1364d;
+ margin-left:75px;
+}
+
+.new-tweet input {
+  float:left;
+}
