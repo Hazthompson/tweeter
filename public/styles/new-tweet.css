@@ -37,10 +37,7 @@
   margin-top:5em;
   margin-left: 2em;
   margin-right: 2em;
-  border-style: solid;
-  border-radius: 5px;
-  border-color: #e5e3e3;
-  border-width: 1px;
+
   background-color: white;
 }
 
@@ -52,6 +49,11 @@
 
 .tweet-article {
   opacity: 0.6;
+  margin-top:10px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #e5e3e3;
+  border-width: 1px;
 }
 
 .tweet-article:hover {
@@ -84,8 +86,9 @@
 }
 
 .container-tweets header span {
-  padding-left: 80px;
-  padding-top: 40px;
+  float:right;
+  margin-right:10px;
+  margin-top:10px;
 }
 
 
