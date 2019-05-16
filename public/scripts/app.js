@@ -72,32 +72,31 @@ function renderTweets(tweets) {
 //renderTweets(data);
 
 
-//function formMessage() {
-  input.on("click",function() {
-    event.preventDefault();
 
-    let targetedForm = $(this).parent();
-    //console.log(targetedForm);
+input.on("click",function() {
+  event.preventDefault();
 
-    // let targetedTextArea = $(targetedForm.find(".text-area"));
-    // console.log(targetedTextArea);
-    // let formMessage = targetedTextArea.val();
-    // console.log(formMessage);
+  let targetedForm = $(this).parent();
+  let targetedTextArea = $(targetedForm.find(".text-area"));
+  let formMessage = targetedTextArea.val();
 
+  if (!formMessage) {
+    alert("Please enter a tweet!")
+  } else if (formMessage.length > 140) {
+    alert("The maximum characters is 140 per tweet!")
+  } else {
 
-
-  $.ajax({
-    method: "POST",
-    url: "/tweets",
-    data: targetedForm.serialize(),
-    success: function() {
-      console.log("success")
-    }, //should be sending status code??
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: targetedForm.serialize(),
+      success: function() {
+        console.log("success")
+      },
     });
+  }
+})
 
-
-  })
-//}
 
 function loadTweets() {
   $.ajax({
