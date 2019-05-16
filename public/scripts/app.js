@@ -105,8 +105,9 @@ input.on("click",function() {
         loadTweets();
         console.log("success!");
       },
-
     });
+
+    $(".text-area").val("");
   }
 })
 
@@ -141,10 +142,10 @@ composeButton.on("click", function() {
 
 if ( $(newTweetSection).is( ":hidden" ) ) {
     $(newTweetSection).slideDown( "slow" );
+    $(".text-area").focus();
   } else {
     $(newTweetSection).hide();
   }
-
 
 
 
