@@ -124,20 +124,22 @@ const data = [
     event.preventDefault();
 
     let targetedForm = $(this).parent();
-    console.log(targetedForm);
+    //console.log(targetedForm);
 
-    let targetedTextArea = $(targetedForm.find(".text-area"));
-    console.log(targetedTextArea);
+    // let targetedTextArea = $(targetedForm.find(".text-area"));
+    // console.log(targetedTextArea);
+    // let formMessage = targetedTextArea.val();
+    // console.log(formMessage);
 
 
-
-  // $.ajax({
-  //   type: "POST",
-  //   url: "/tweets"
-  //   data: targetedTextArea.val()
-  //   sucess:
-  //   data type:
-  //   });
+  $.ajax({
+    method: "POST",
+    url: "/tweets",
+    data: targetedForm.serialize(),
+    success: function() {
+      console.log("success")
+    }, //should be sending status code??
+    });
 
 
   })
