@@ -7,7 +7,6 @@ $(document).ready(function() {
 
 let input = $(".new-tweet input");
 
-
 function createTweetElement(tweetObject) {
   let $tweet = $("<article>").addClass("tweet-article");
 
@@ -47,17 +46,6 @@ function createTweetElement(tweetObject) {
 
   return $tweet
 
-  // console.log($tweet);
-
-  // let targetedForm = $(this).parent();
-  // console.log(targetedForm);
-
-  // let targetedTextArea = $(targetedForm.find(".text-area"));
-  // console.log(targetedTextArea);
-
-  // console.log(targetedTextArea.val());
-
-  // $tweet.innerHTML(targetedTextArea.val());
 
 
 
@@ -69,33 +57,11 @@ function createTweetElement(tweetObject) {
 };
 
 
-const tweetData = {
-  "user": {
-    "name": "Newton",
-    "avatars": {
-      "small":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png",
-      "regular": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188.png",
-      "large":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_200.png"
-    },
-    "handle": "@SirIsaac"
-  },
-  "content": {
-    "text": "If I have seen further it is by standing on the shoulders of giants"
-  },
-  "created_at": 1461116232227
-}
-
-var $tweet = createTweetElement(tweetData);
-
-console.log($tweet); // to see what it looks like
-
-$('.container-tweets').append($tweet);
 
 function renderTweets(tweets) {
 
   // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
+    // calls createTweetElement for each tweet takes return value and appends it to the tweets container
     for(let tweet of tweets){
       let newTweet = createTweetElement(tweet);
       $('.container-tweets').append(newTweet)
@@ -150,9 +116,40 @@ const data = [
   }
 ];
 
+//renderTweets(data);
 
 
-renderTweets(data);
+//function formMessage() {
+  input.on("click",function() {
+    event.preventDefault();
+
+    let targetedForm = $(this).parent();
+    console.log(targetedForm);
+
+    let targetedTextArea = $(targetedForm.find(".text-area"));
+    console.log(targetedTextArea);
+
+
+
+  // $.ajax({
+  //   type: "POST",
+  //   url: "/tweets"
+  //   data: targetedTextArea.val()
+  //   sucess:
+  //   data type:
+  //   });
+
+
+  })
+//}
+
+//create createTweetElement()
+  //add the users info to the database if dosn't exist? or pull the needed info from the BD?
+
+//formMessage();
+
+
+
 
 
 });

@@ -2,7 +2,7 @@ $(document).ready(function() {
   let textarea = $(".new-tweet textarea");
 
   textarea.on("input", function(event) {
-    console.log($(this));
+    //console.log($(this));
 
     let targetedForm = $(this).parent();
     let targetedCounter = $(targetedForm.find(".counter")); //already jquerified thing then don't need dollar here again?
