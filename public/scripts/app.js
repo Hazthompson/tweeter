@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
-$(newTweetSection).hide()
+
+let initialHide = $(".new-tweet").hide();
+console.log(initialHide);
+
 //   $('.container-tweets').hover(
 //        function(){ $(this).addClass('hover') },
 //        function(){ $(this).removeClass('hover') }
