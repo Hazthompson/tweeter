@@ -95,12 +95,13 @@ input.on("click",function() {
 
   if (!formMessage) {
     $(".no-text").slideDown( "slow" );
-    $(".text-area").on("click", function() {$(".no-text").hide()});
+    //$(".text-area").on("click", function() {$(".no-text").hide()});
   } else if (formMessage.length > 140) {
     $(".too-long").slideDown( "slow" );
-    $(".text-area").on("click", function() {$(".too-long").hide()});
+    //$(".text-area").on("click", function() {$(".too-long").hide()});
   } else {
-
+  $(".no-text").hide()
+  $(".too-long").hide()
     $.ajax({
       method: "POST",
       url: "/tweets",
