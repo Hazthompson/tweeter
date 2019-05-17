@@ -28,7 +28,5 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   app.listen(PORT, () => {
     console.log("Example app listening on port " + PORT);
   });
-
-  //db.close(); //do I have to keep restarting server?
 });
 

@@ -15,9 +15,7 @@ module.exports = function makeDataHelpers(db) {
         .collection("tweets")
         .find()
         .toArray(callback);
-      console.log("databaseArray", databaseArray);
     }
   };
 };
 
-//can we put DB.close here?

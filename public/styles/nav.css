@@ -8,32 +8,57 @@
   padding-left: 2em;
   padding-right: 2em;
   z-index: 100;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 #nav-bar .logo {
   float: left;
   width: 80px;
-  height: 80px;
 }
 
 #nav-bar .header {
   float: left;
   margin-left: 10px;
-  font-size: 200%;
+  font-size: 2.5em;
   line-height: 85px;
+
 }
 
 #nav-bar .compose-button {
   color: #f38181;
-  background-color: white;
-  float: right;
+  background-color: #e8fdff;
   margin-top: 10px;
+  margin-right:10px;
   font-size: 15px;
   border-radius: 5px;
   height: 60px;
   border: solid black 0.5px;
+  display:flex;
+  justify-content: right;
+
+}
+
+.navdiv {
+  display:flex;
+  align-items: center;
 }
 
 #nav-bar .compose-button:hover {
   color: black;
+}
+
+@media (max-width: 400px) {
+
+  #nav-bar .logo {
+    width: 20vw;
+    margin: auto;
+  }
+
+  #nav-bar .compose-button {
+    width: 20vw;
+  }
+
 }
