@@ -84,8 +84,10 @@ $(document).ready(function() {
     let formMessage = targetedTextArea.val();
 
     if (!formMessage) {
+      $(".too-long").hide();
       $(".no-text").slideDown("slow");
     } else if (formMessage.length > 140) {
+      $(".no-text").hide();
       $(".too-long").slideDown("slow");
     } else {
       $(".no-text").hide();

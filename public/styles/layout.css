@@ -9,12 +9,12 @@ html {
 body {
   margin: 0;
   color: #244751;
-  background-color: #eee;
+  background-color: #fce38a;
   font-family:'Roboto Condensed', sans-serif;
 }
 
 .container {
-  background-color: white;
+  background-color: #e8fdff;
   margin: 0 auto;
   min-height: 500px;
   width: 450px;
@@ -29,7 +29,7 @@ body {
   margin-left: 2em;
   margin-right: 2em;
 
-  background-color: white;
+  background-color: #e8fdff;
 }
 
 .container-tweets .tweet-message {
@@ -61,7 +61,7 @@ body {
   opacity: 1;
 }
 .container-tweets header {
-  background-color: #eeeeee;
+  background-color: #95e1d3;
   height: 70px;
 }
 
