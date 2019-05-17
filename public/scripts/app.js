@@ -145,11 +145,11 @@ composeButton.on("click", function() {
   //   function(){newTweetSection.slideUp("slow")}
   //   )
 
-if ( $(newTweetSection).is( ":hidden" ) ) {
-    $(newTweetSection).slideDown( "slow" );
+if ( $(newTweetSection).is(":hidden") ) {
+    $(newTweetSection).slideDown("slow");
     $(".text-area").focus()
   } else {
-    $(newTweetSection).hide();
+    $(newTweetSection).slideUp("slow");
   }
 
 
