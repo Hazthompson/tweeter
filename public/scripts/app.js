@@ -72,7 +72,7 @@ $(document).ready(function() {
     });
   }
 
- loadTweets(); //load all tweets on page when page loaded.
+  loadTweets(); //load all tweets on page when page loaded.
 
   //on click for "tweet" input trigger functions on this page to create,render and display tweets (including new tweet added) on page.
   let input = $(".new-tweet input");
