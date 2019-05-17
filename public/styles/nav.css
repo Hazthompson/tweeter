@@ -2,7 +2,7 @@
   position: fixed;
   color: #e8fdff;
   background-color: #00a087;
-  top:0;
+  top: 0;
   width: 100%;
   height: 80px;
   padding-left: 2em;
@@ -14,7 +14,6 @@
   float: left;
   width: 80px;
   height: 80px;
-
 }
 
 #nav-bar .header {
@@ -27,10 +26,10 @@
 #nav-bar .compose-button {
   color: #00a087;
   background-color: white;
-  float:right;
+  float: right;
   margin-top: 10px;
   font-size: 15px;
-  border-radius:5px;
+  border-radius: 5px;
   height: 60px;
   border: solid black 0.5px;
   /*background-image:url('<i class="fas fa-edit"></i>');*/
