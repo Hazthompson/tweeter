@@ -36,17 +36,18 @@
   border-width: 0.5px;
 }
 
-.no-text, .too-long {
+.no-text,
+.too-long {
   color: #d1364d;
   margin-left: 75px;
 }
 
 .new-tweet input {
   float: left;
-  border-radius:5px;
+  border-radius: 5px;
   color: #203a35;
 }
 
 .fas {
-  padding:1.5px;
+  padding: 1.5px;
 }
