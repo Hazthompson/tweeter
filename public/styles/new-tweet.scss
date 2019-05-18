@@ -1,0 +1,49 @@
+.new-tweet {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  border-style: solid;
+  border-radius: $border-radius;
+  border-color: #c6c6c6;
+  border-width: 1px;
+  position: relative;
+  top: 4em;
+  padding: 10px;
+  background-color: #95e1d3;
+  height: 170px;
+  opacity: 0.7;
+
+
+  textarea {
+    padding: 5px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+
+  .counter {
+    float: right;
+    font-style: italic;
+  }
+
+  .counter.negative {
+    color: #d1364d;
+  }
+
+  h2 {
+    border-color: #999191;
+    border-bottom-style: solid;
+    border-width: 0.5px;
+  }
+
+  .no-text, .too-long {
+    color: #d1364d;
+    margin-left: 75px;
+  }
+
+  input {
+    float: left;
+    border-radius: 5px;
+    color: #203a35;
+  }
+}
